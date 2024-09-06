@@ -179,21 +179,22 @@ with st.expander("Food Types"):
         st.write("- Steak")
         st.write("- Sushi")
 
-# Add custom CSS for styling and animations
+# Add custom CSS for dark background and styling
 st.markdown("""
 <style>
     .stApp {
-        background-color: #f0f2f6;
+        background-color: #1e1e1e;
+        color: #e0e0e0;
         font-family: 'Arial', sans-serif;
     }
     .css-1v3fvcr {
-        background-color: #ffffff;
+        background-color: #2d2d2d;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         padding: 20px;
     }
     .stImage {
-        border: 5px solid #ddd;
+        border: 5px solid #444;
         border-radius: 10px;
     }
     .stSpinner {
@@ -203,9 +204,13 @@ st.markdown("""
         height: 100px;
     }
     .stExpander {
-        border: 1px solid #ddd;
+        border: 1px solid #444;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .sidebar .sidebar-content {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -213,5 +218,6 @@ st.markdown("""
 # Add footer
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("Made with ❤️ by [Your Name]", unsafe_allow_html=True)
+
 
 
